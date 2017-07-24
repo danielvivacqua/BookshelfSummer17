@@ -18,6 +18,7 @@ namespace BookshelfSummer17.Models
         public string ISBN { get; set; }
 
         [ForeignKey("Category")]
+        [Display(Name = "Category")]
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
     }
